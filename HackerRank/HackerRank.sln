@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sock_merchant", "sock_merchant\sock_merchant.vcxproj", "{B3A07865-1356-46D9-A8AF-50D64678EE5C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "counting_valleys", "counting_valleys\counting_valleys.vcxproj", "{D60EFF6C-969F-4F1C-9661-7879BE31C861}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{B3A07865-1356-46D9-A8AF-50D64678EE5C}.Release|x64.Build.0 = Release|x64
 		{B3A07865-1356-46D9-A8AF-50D64678EE5C}.Release|x86.ActiveCfg = Release|Win32
 		{B3A07865-1356-46D9-A8AF-50D64678EE5C}.Release|x86.Build.0 = Release|Win32
+		{D60EFF6C-969F-4F1C-9661-7879BE31C861}.Debug|x64.ActiveCfg = Debug|x64
+		{D60EFF6C-969F-4F1C-9661-7879BE31C861}.Debug|x64.Build.0 = Debug|x64
+		{D60EFF6C-969F-4F1C-9661-7879BE31C861}.Debug|x86.ActiveCfg = Debug|Win32
+		{D60EFF6C-969F-4F1C-9661-7879BE31C861}.Debug|x86.Build.0 = Debug|Win32
+		{D60EFF6C-969F-4F1C-9661-7879BE31C861}.Release|x64.ActiveCfg = Release|x64
+		{D60EFF6C-969F-4F1C-9661-7879BE31C861}.Release|x64.Build.0 = Release|x64
+		{D60EFF6C-969F-4F1C-9661-7879BE31C861}.Release|x86.ActiveCfg = Release|Win32
+		{D60EFF6C-969F-4F1C-9661-7879BE31C861}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
