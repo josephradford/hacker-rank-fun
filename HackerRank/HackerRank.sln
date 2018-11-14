@@ -7,6 +7,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sock_merchant", "sock_merch
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "counting_valleys", "counting_valleys\counting_valleys.vcxproj", "{D60EFF6C-969F-4F1C-9661-7879BE31C861}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jumping_on_the_clouds", "jumping_on_the_clouds\jumping_on_the_clouds.vcxproj", "{37D3F3AA-04B9-44A4-AA9C-E08E48E40630}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HackerRankTests", "HackerRankTests\HackerRankTests.vcxproj", "{05850FBE-C45D-46E1-874C-6BAF51402C93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +35,22 @@ Global
 		{D60EFF6C-969F-4F1C-9661-7879BE31C861}.Release|x64.Build.0 = Release|x64
 		{D60EFF6C-969F-4F1C-9661-7879BE31C861}.Release|x86.ActiveCfg = Release|Win32
 		{D60EFF6C-969F-4F1C-9661-7879BE31C861}.Release|x86.Build.0 = Release|Win32
+		{37D3F3AA-04B9-44A4-AA9C-E08E48E40630}.Debug|x64.ActiveCfg = Debug|x64
+		{37D3F3AA-04B9-44A4-AA9C-E08E48E40630}.Debug|x64.Build.0 = Debug|x64
+		{37D3F3AA-04B9-44A4-AA9C-E08E48E40630}.Debug|x86.ActiveCfg = Debug|Win32
+		{37D3F3AA-04B9-44A4-AA9C-E08E48E40630}.Debug|x86.Build.0 = Debug|Win32
+		{37D3F3AA-04B9-44A4-AA9C-E08E48E40630}.Release|x64.ActiveCfg = Release|x64
+		{37D3F3AA-04B9-44A4-AA9C-E08E48E40630}.Release|x64.Build.0 = Release|x64
+		{37D3F3AA-04B9-44A4-AA9C-E08E48E40630}.Release|x86.ActiveCfg = Release|Win32
+		{37D3F3AA-04B9-44A4-AA9C-E08E48E40630}.Release|x86.Build.0 = Release|Win32
+		{05850FBE-C45D-46E1-874C-6BAF51402C93}.Debug|x64.ActiveCfg = Debug|x64
+		{05850FBE-C45D-46E1-874C-6BAF51402C93}.Debug|x64.Build.0 = Debug|x64
+		{05850FBE-C45D-46E1-874C-6BAF51402C93}.Debug|x86.ActiveCfg = Debug|Win32
+		{05850FBE-C45D-46E1-874C-6BAF51402C93}.Debug|x86.Build.0 = Debug|Win32
+		{05850FBE-C45D-46E1-874C-6BAF51402C93}.Release|x64.ActiveCfg = Release|x64
+		{05850FBE-C45D-46E1-874C-6BAF51402C93}.Release|x64.Build.0 = Release|x64
+		{05850FBE-C45D-46E1-874C-6BAF51402C93}.Release|x86.ActiveCfg = Release|Win32
+		{05850FBE-C45D-46E1-874C-6BAF51402C93}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
