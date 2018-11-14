@@ -17,9 +17,11 @@ namespace HackerRankTests
 			// TODO: Your test code here
 			
 			std::vector<int> c = { 0, 0, 1, 0, 0, 1, 0 };
-			Assert::AreEqual(jumpingOnClouds(c), 4);
-			std::vector<int> d = { 0, 0, 1, 0, 0, 1, 0, 0 };
-			Assert::AreEqual(jumpingOnClouds(d), 5);
+			Assert::AreEqual(4, jumpingOnClouds(c));
+			std::vector<int> d = { 0, 1, 0, 0, 0, 0 };
+			Assert::AreEqual(3, jumpingOnClouds(d));
+			std::vector<int> e = { 0, 0, 1, 0, 0, 1, 0, 0 };
+			Assert::AreEqual(5, jumpingOnClouds(e));
 		}
 
 	};
