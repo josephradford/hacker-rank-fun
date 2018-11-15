@@ -4,7 +4,7 @@
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-#include "../warmup/warmup.h"
+#include "../HackerRankSolutions/warmup.h"
 
 namespace HackerRankTests
 {		
