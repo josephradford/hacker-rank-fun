@@ -24,12 +24,18 @@
     <ClInclude Include="warmup.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="array_challenge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="warmup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="array_challenge.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
