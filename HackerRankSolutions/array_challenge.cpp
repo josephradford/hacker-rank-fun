@@ -25,3 +25,11 @@ int hourglassSum(std::vector<std::vector<int>> arr) {
 	}
 	return max_result;
 }
+
+// Complete the rotLeft function below.
+std::vector<int> rotLeft(std::vector<int> a, int d) {
+
+
+	return { 0, 0 };
+}
+
