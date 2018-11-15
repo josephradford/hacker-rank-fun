@@ -21,7 +21,7 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="repeated_string.h">
+    <ClInclude Include="warmup.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -29,7 +29,7 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="repeated_string.cpp">
+    <ClCompile Include="warmup.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
