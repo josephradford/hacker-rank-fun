@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jumping_on_the_clouds", "ju
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HackerRankTests", "HackerRankTests\HackerRankTests.vcxproj", "{05850FBE-C45D-46E1-874C-6BAF51402C93}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "repeated_string", "repeated_string\repeated_string.vcxproj", "{7D2BA8E0-FC75-40A6-9378-B43D23E6616A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{05850FBE-C45D-46E1-874C-6BAF51402C93}.Release|x64.Build.0 = Release|x64
 		{05850FBE-C45D-46E1-874C-6BAF51402C93}.Release|x86.ActiveCfg = Release|Win32
 		{05850FBE-C45D-46E1-874C-6BAF51402C93}.Release|x86.Build.0 = Release|Win32
+		{7D2BA8E0-FC75-40A6-9378-B43D23E6616A}.Debug|x64.ActiveCfg = Debug|x64
+		{7D2BA8E0-FC75-40A6-9378-B43D23E6616A}.Debug|x64.Build.0 = Debug|x64
+		{7D2BA8E0-FC75-40A6-9378-B43D23E6616A}.Debug|x86.ActiveCfg = Debug|Win32
+		{7D2BA8E0-FC75-40A6-9378-B43D23E6616A}.Debug|x86.Build.0 = Debug|Win32
+		{7D2BA8E0-FC75-40A6-9378-B43D23E6616A}.Release|x64.ActiveCfg = Release|x64
+		{7D2BA8E0-FC75-40A6-9378-B43D23E6616A}.Release|x64.Build.0 = Release|x64
+		{7D2BA8E0-FC75-40A6-9378-B43D23E6616A}.Release|x86.ActiveCfg = Release|Win32
+		{7D2BA8E0-FC75-40A6-9378-B43D23E6616A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
