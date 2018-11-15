@@ -28,8 +28,16 @@ int hourglassSum(std::vector<std::vector<int>> arr) {
 
 // Complete the rotLeft function below.
 std::vector<int> rotLeft(std::vector<int> a, int d) {
-
-
-	return { 0, 0 };
+	int dRot = d % a.size();
+	vector<int> result;
+	result.resize(a.size());
+	for (int i = 0; i < a.size(); i++) {
+		int newIdx = i - dRot;
+		if (newIdx < 0) {
+			newIdx += a.size();
+		}
+		result[newIdx] = a[i];
+	}
+	return result;
 }
 

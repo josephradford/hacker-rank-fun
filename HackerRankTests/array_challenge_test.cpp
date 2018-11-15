@@ -27,7 +27,7 @@ namespace HackerRankTests
 		TEST_METHOD(TestRotLeft)
 		{
 			std::vector<int> expectedResult = std::vector<int>({ 5, 1, 2, 3, 4 });
-			std::vector<int> result = rotLeft(std::vector<int>({ 1, 2, 3, 4, 5 }), 4);
+			std::vector<int> result = rotLeft(std::vector<int>({ 1, 2, 3, 4, 5 }), 9);
 			Assert::AreEqual(expectedResult.size(), result.size());
 			for (int i = 0; i < result.size(); i++) {
 				Assert::AreEqual(expectedResult.at(i), result.at(i));
