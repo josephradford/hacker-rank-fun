@@ -42,6 +42,7 @@ std::vector<int> rotLeft(std::vector<int> a, int d) {
 }
 
 // Complete the minimumBribes function below.
+// NOT WORKING
 int minimumBribes(std::vector<int> q) {
 	int numBribes = 0;
 	for (int i = 0; i < q.size(); i++) {
@@ -60,6 +61,12 @@ int minimumBribes(std::vector<int> q) {
 		}
 	}
 	return numBribes;
+}
+
+// Complete the minimumSwaps function below.
+int minimumSwaps(std::vector<int> arr) {
+	int swaps = 0;
+	return swaps;
 }
 
 

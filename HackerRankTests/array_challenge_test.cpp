@@ -43,5 +43,12 @@ namespace HackerRankTests
 			Assert::AreEqual(-1, minimumBribes(std::vector<int>({ 2, 5, 1, 3, 4 })));
 		}
 
+		TEST_METHOD(MinimumSwapsTest)
+		{
+			Assert::AreEqual(3, minimumSwaps(std::vector<int>({ 1, 3, 5, 2, 4, 6, 7 })));
+			Assert::AreEqual(3, minimumSwaps(std::vector<int>({ 2, 3, 4, 1, 5 })));
+			Assert::AreEqual(3, minimumSwaps(std::vector<int>({ 4, 3, 1, 2 })));
+		}
+
 	};
 }
