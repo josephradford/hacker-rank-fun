@@ -130,9 +130,11 @@ long arrayManipulation(int n, std::vector<std::vector<int>> queries) {
 		i = nextClosest;
 		// need to cycle back through iterators to start where the next set is included
 		for (it; it > queries.begin();) {
-			if ((*(it - 1))[0] <= nextClosest && (*(it - 1))[1] >= nextClosest) {
+			std::vector<std::vector<int>>::iterator prev_it = it - 1;
+
+			if ((*prev_it)[0] <= nextClosest && (*prev_it)[1] >= nextClosest) {
 				// previous is OK
-				it--;
+				it = prev_it;
 			}
 			else {
 				break;
