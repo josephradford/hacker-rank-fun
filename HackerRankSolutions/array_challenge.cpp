@@ -93,13 +93,22 @@ int minimumSwaps(std::vector<int> arr) {
 
 // Complete the arrayManipulation function below.
 long arrayManipulation(int n, std::vector<std::vector<int>> queries) {
-	vector<long> arr(n, 0);
+	long maxCombination = 0;
 	for (auto &row : queries) {
-		for (int i = (row[0] - 1); i < row[1]; i++) {
-			arr[i] += (long)row[2];
+		long currentSetValue = row[2];
+		for (auto &rowCompare : queries) {
+			if (row != rowCompare) {
+				if ((rowCompare[0] >= row[0] && rowCompare[0] <= row[1]) ||
+					(rowCompare[1] >= row[0] && rowCompare[1] <= row[1])) {
+					currentSetValue += rowCompare[2];
+				}
+			}
+		}
+		if (currentSetValue > maxCombination) {
+			maxCombination = currentSetValue;
 		}
 	}
-	return *max_element(arr.begin(), arr.end());
+	return maxCombination;
 }
 
 
