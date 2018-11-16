@@ -93,9 +93,13 @@ int minimumSwaps(std::vector<int> arr) {
 
 // Complete the arrayManipulation function below.
 long arrayManipulation(int n, std::vector<std::vector<int>> queries) {
-	long retval = 0;
-
-	return retval;
+	vector<long> arr(n, 0);
+	for (auto &row : queries) {
+		for (int i = (row[0] - 1); i < row[1]; i++) {
+			arr[i] += (long)row[2];
+		}
+	}
+	return *max_element(arr.begin(), arr.end());
 }
 
 
