@@ -41,3 +41,10 @@ std::vector<int> rotLeft(std::vector<int> a, int d) {
 	return result;
 }
 
+// Complete the minimumBribes function below.
+int minimumBribes(std::vector<int> q) {
+
+	return 0;
+}
+
+

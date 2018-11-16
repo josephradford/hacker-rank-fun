@@ -34,5 +34,12 @@ namespace HackerRankTests
 			}
 		}
 
+		TEST_METHOD(MinimumBribesTest)
+		{
+			Assert::AreEqual(3, minimumBribes(std::vector<int>({ 2, 1, 5, 3, 4 })));
+			Assert::AreEqual(-1, minimumBribes(std::vector<int>({ 2, 5, 1, 3, 4 })));
+			
+		}
+
 	};
 }
