@@ -43,8 +43,23 @@ std::vector<int> rotLeft(std::vector<int> a, int d) {
 
 // Complete the minimumBribes function below.
 int minimumBribes(std::vector<int> q) {
-
-	return 0;
+	int numBribes = 0;
+	for (int i = 0; i < q.size(); i++) {
+		int outOfPos = q.at(i) - (i + 1);
+		if (outOfPos > 2) {
+			return -1;
+		}
+		else if (outOfPos >= 0) {
+			numBribes += outOfPos;
+		}
+		else {
+			if (((i + 1) < q.size()) && (q.at(i) > q.at(i + 1))) {
+				// there's another swap
+				numBribes++;
+			}
+		}
+	}
+	return numBribes;
 }
 
 
