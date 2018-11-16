@@ -52,8 +52,8 @@ namespace HackerRankTests
 
 		TEST_METHOD(ArrayManipulationTest)
 		{
+			Assert::AreEqual((long)10, arrayManipulation(10, std::vector<std::vector<int>>({ { 1, 5, 3 },{ 4, 8, 7 },{ 6, 9, 1 } })));
 			Assert::AreEqual((long)200, arrayManipulation(5, std::vector<std::vector<int>>({ { 1, 2, 100 },{ 2, 5, 100 },{ 3, 4, 100 } })));
-			Assert::AreEqual((long)10, arrayManipulation(10, std::vector<std::vector<int>>({ {1, 5, 3}, {4, 8, 7}, {6, 9, 1} })));
 		}
 
 	};

@@ -94,16 +94,39 @@ int minimumSwaps(std::vector<int> arr) {
 // Complete the arrayManipulation function below.
 long arrayManipulation(int n, std::vector<std::vector<int>> queries) {
 	long maxCombination = 0;
-	for (int i = 1; i <= n; i++) {
+	for (int i = 1; i <= n; ) {
 		long currentSetValue = 0;
-		for (auto &row : queries) {
-			if ((i >= row[0]) && (i <= row[1])) {
-				currentSetValue += row[2];
+		int nextClosest = i + 1; // worst case, it is a unique set on its own
+		bool nextClosestSet = false;
+
+		// find the sum for this union, and determine how far ahead we can jump to get to the next union
+		std::vector<std::vector<int>>::iterator it = queries.begin();
+		while (it != queries.end()) {
+			int endOfThisRow = -1;
+			if ((i >= (*it)[0]) && (i <= (*it)[1])) {
+				// this set contains the current index
+				currentSetValue += (*it)[2];
+				endOfThisRow = (*it)[1] + 1;
+				++it;
+			}
+			else if (i < (*it)[0]) {
+				// this set is after the current index
+				endOfThisRow = (*it)[0];
+				++it;
+			}
+			else {
+				// else: comes before the current index and can be removed
+				it = queries.erase(it);
+			}
+			if ((endOfThisRow > 0) && (!nextClosestSet || (nextClosest > endOfThisRow))) {
+				nextClosestSet = true;
+				nextClosest = endOfThisRow;
 			}
 		}
 		if (currentSetValue > maxCombination) {
 			maxCombination = currentSetValue;
 		}
+		i = nextClosest;
 	}
 	return maxCombination;
 }
