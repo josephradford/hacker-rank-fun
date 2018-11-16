@@ -116,7 +116,8 @@ long arrayManipulation(int n, std::vector<std::vector<int>> queries) {
 			}
 			else {
 				// else: comes before the current index and can be removed
-				it = queries.erase(it);
+				//it = queries.erase(it);
+				++it;
 			}
 			if ((endOfThisRow > 0) && (!nextClosestSet || (nextClosest > endOfThisRow))) {
 				nextClosestSet = true;
