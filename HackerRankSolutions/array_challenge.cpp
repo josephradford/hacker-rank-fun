@@ -66,6 +66,28 @@ int minimumBribes(std::vector<int> q) {
 // Complete the minimumSwaps function below.
 int minimumSwaps(std::vector<int> arr) {
 	int swaps = 0;
+	vector<pair<int, int>>valPos(arr.size());
+	for (int i = 0; i < arr.size(); i++) {
+		valPos[i].first = arr[i];
+		valPos[i].second = i;
+	}
+	sort(valPos.begin(), valPos.end());
+
+	// find the cycle
+	vector<bool>indexChecked(valPos.size(), false);
+	for (int i = 0; i < valPos.size(); i++) {
+		if (indexChecked.at(i)) {
+			continue;
+		}
+		int firstIdx = i;
+		int currentIdx = firstIdx;
+		int nextIdx = valPos[currentIdx].second;
+		while (firstIdx != nextIdx) {
+			indexChecked[nextIdx] = true;
+			nextIdx = valPos[nextIdx].second;
+			swaps++;
+		}
+	}
 	return swaps;
 }
 
