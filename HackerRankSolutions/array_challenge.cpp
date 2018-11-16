@@ -91,4 +91,11 @@ int minimumSwaps(std::vector<int> arr) {
 	return swaps;
 }
 
+// Complete the arrayManipulation function below.
+long arrayManipulation(int n, std::vector<std::vector<int>> queries) {
+	long retval = 0;
+
+	return retval;
+}
+
 
