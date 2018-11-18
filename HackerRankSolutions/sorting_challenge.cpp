@@ -38,6 +38,23 @@ int Checker::comparator(Player a, Player b)
 
 // Complete the activityNotifications function below.
 int activityNotifications(std::vector<int> expenditure, int d) {
-
-	return 0;
+	int numNotifications = 0;
+	for (int i = d; i < expenditure.size(); i++) {
+		std::vector<int> priorExpenditure(&expenditure[i - d], &expenditure[i]);
+		sort(priorExpenditure.begin(), priorExpenditure.end());
+		int double_median = 0;
+		int midIdx = priorExpenditure.size() / 2;
+		if (priorExpenditure.size() % 2) {
+			// it's odd, pick the middle one
+			double_median = priorExpenditure.at(midIdx) * 2;
+		}
+		else {
+			// it's even, average the middle 2
+			double_median = (priorExpenditure.at(midIdx - 1) + priorExpenditure.at(midIdx));
+		}
+		if (expenditure.at(i) >= double_median) {
+			numNotifications++;
+		}
+	}
+	return numNotifications;
 }

@@ -31,6 +31,7 @@ namespace HackerRankTests
 
 		TEST_METHOD(TestNotificationMedian)
 		{
+			Assert::AreEqual(1, activityNotifications(std::vector<int>({ 10, 20, 30, 40, 50 }), 3));
 			Assert::AreEqual(2, activityNotifications(std::vector<int>({ 2, 3, 4, 2, 3, 6, 8, 4, 5 }), 5));
 			Assert::AreEqual(0, activityNotifications(std::vector<int>({ 1, 2, 3, 4, 4}), 4));
 		}
