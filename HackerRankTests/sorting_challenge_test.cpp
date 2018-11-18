@@ -21,6 +21,7 @@ namespace HackerRankTests
 			Player aakansha = { 75, "aakansha" };
 			Player aleksa = { 150, "aleksa" };
 
+			Assert::AreEqual(1, Checker::comparator(amy, david));
 			Assert::AreEqual(1, Checker::comparator(aleksa, aakansha));
 			Assert::AreEqual(-1, Checker::comparator(aakansha, aleksa));
 			Assert::AreEqual(0, Checker::comparator(aakansha, aakansha));
