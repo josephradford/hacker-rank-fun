@@ -12,7 +12,7 @@ namespace HackerRankTests
 	{
 	public:
 
-		TEST_METHOD(TestHourglassSum)
+		TEST_METHOD(TestPlayerSorting)
 		{
 			Player amy = { 100, "amy" };
 			Player amy2 = { 100, "amyy" };
@@ -27,6 +27,12 @@ namespace HackerRankTests
 			Assert::AreEqual(0, Checker::comparator(aakansha, aakansha));
 			Assert::AreEqual(1, Checker::comparator(amy, amy2));
 			Assert::AreEqual(-1, Checker::comparator(amy2, amy));
+		}
+
+		TEST_METHOD(TestNotificationMedian)
+		{
+			Assert::AreEqual(2, activityNotifications(std::vector<int>({ 2, 3, 4, 2, 3, 6, 8, 4, 5 }), 5));
+			Assert::AreEqual(0, activityNotifications(std::vector<int>({ 1, 2, 3, 4, 4}), 4));
 		}
 	};
 }

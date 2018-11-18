@@ -11,3 +11,5 @@ public:
 	static int comparator(Player a, Player b);
 };
 
+int activityNotifications(std::vector<int> expenditure, int d);
+

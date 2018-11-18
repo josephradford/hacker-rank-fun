@@ -35,3 +35,9 @@ int Checker::comparator(Player a, Player b)
 	}
 	return 0;
 }
+
+// Complete the activityNotifications function below.
+int activityNotifications(std::vector<int> expenditure, int d) {
+
+	return 0;
+}
