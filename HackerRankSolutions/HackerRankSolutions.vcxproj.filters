@@ -30,6 +30,9 @@
     <ClInclude Include="sorting_challenge.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="thirty_days_code.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -42,6 +45,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="sorting_challenge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="thirty_days_code.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -35,5 +35,8 @@
     <ClCompile Include="sorting_challenge_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="thirty_days_code_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
